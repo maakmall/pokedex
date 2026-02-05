@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 33% 96%;
+    --foreground: 220 20% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 15%;
+
+    --primary: 0 72% 51%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 40 20% 92%;
+    --secondary-foreground: 220 20% 15%;
+
+    --muted: 40 20% 92%;
+    --muted-foreground: 220 10% 45%;
+
+    --accent: 45 93% 58%;
+    --accent-foreground: 220 20% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 40 15% 85%;
+    --input: 40 15% 85%;
+    --ring: 0 72% 51%;
+
+    --radius: 0.75rem;
+
+    /* Pokémon type colors */
+    --pokemon-normal: 60 5% 55%;
+    --pokemon-fire: 25 85% 55%;
+    --pokemon-water: 215 75% 55%;
+    --pokemon-electric: 48 95% 55%;
+    --pokemon-grass: 100 55% 45%;
+    --pokemon-ice: 185 60% 70%;
+    --pokemon-fighting: 5 70% 45%;
+    --pokemon-poison: 280 60% 50%;
+    --pokemon-ground: 35 55% 55%;
+    --pokemon-flying: 240 60% 75%;
+    --pokemon-psychic: 340 75% 60%;
+    --pokemon-bug: 75 65% 40%;
+    --pokemon-rock: 45 35% 45%;
+    --pokemon-ghost: 265 35% 40%;
+    --pokemon-dragon: 255 75% 55%;
+    --pokemon-dark: 25 25% 30%;
+    --pokemon-steel: 220 15% 65%;
+    --pokemon-fairy: 330 60% 75%;
+  }
+
+  .dark {
+    --background: 220 20% 10%;
+    --foreground: 40 15% 95%;
+
+    --card: 220 18% 14%;
+    --card-foreground: 40 15% 95%;
+
+    --popover: 220 18% 14%;
+    --popover-foreground: 40 15% 95%;
+
+    --primary: 0 72% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 15% 20%;
+    --secondary-foreground: 40 15% 95%;
+
+    --muted: 220 15% 20%;
+    --muted-foreground: 220 10% 60%;
+
+    --accent: 45 93% 58%;
+    --accent-foreground: 220 20% 15%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 15% 25%;
+    --input: 220 15% 25%;
+    --ring: 0 72% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    font-family: 'Outfit', sans-serif;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}
+
+@layer utilities {
+  .animate-bounce-slow {
+    animation: bounce-slow 3s ease-in-out infinite;
+  }
+
+  @keyframes bounce-slow {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+}
