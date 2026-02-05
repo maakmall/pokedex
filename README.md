@@ -31,3 +31,23 @@ This project is built with:
 - React
 - shadcn-ui
 - Tailwind CSS
+
+## Project Structure
+
+```
+pokedex/
+├── src/
+│   ├── components/     # Reusable React components
+│   ├── pages/          # Page components
+│   ├── hooks/          # Custom React hooks
+│   ├── types/          # TypeScript type definitions
+│   ├── utils/          # Utility functions
+│   ├── App.tsx         # Main App component
+│   └── main.tsx        # Entry point
+├── public/             # Static assets
+├── index.html          # HTML template
+├── vite.config.ts      # Vite configuration
+├── tsconfig.json       # TypeScript configuration
+├── tailwind.config.ts  # Tailwind CSS configuration
+└── package.json        # Project dependencies
+```
