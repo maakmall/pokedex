@@ -38,10 +38,10 @@ This project is built with:
 pokedex/
 ├── src/
 │   ├── components/     # Reusable React components
-│   ├── pages/          # Page components
+│   ├── context/        # React Context
 │   ├── hooks/          # Custom React hooks
-│   ├── types/          # TypeScript type definitions
-│   ├── utils/          # Utility functions
+│   ├── lib/            # Utility functions
+│   ├── pages/          # Page components
 │   ├── App.tsx         # Main App component
 │   └── main.tsx        # Entry point
 ├── public/             # Static assets
